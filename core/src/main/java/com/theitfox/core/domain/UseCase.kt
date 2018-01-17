@@ -82,7 +82,7 @@ abstract class UseCase<T>(
      *
      * @return an Observable that promises the output of this use case
      */
-    protected fun buildExecutionObservable(): Observable<T> {
+    protected open fun buildExecutionObservable(): Observable<T> {
         return buildUseCaseObservable()
     }
 
